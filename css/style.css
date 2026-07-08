@@ -271,3 +271,23 @@ footer {
     margin-bottom:20px;
 
 }
+
+.why {
+
+    background:#ffffff;
+
+}
+
+
+.why .card {
+
+    border:1px solid #e5e7eb;
+
+}
+
+
+.why .card h3 {
+
+    color:#0f172a;
+
+}
