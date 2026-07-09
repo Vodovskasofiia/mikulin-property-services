@@ -17,3 +17,15 @@ const translations = {
     }
 
 };
+
+function changeLanguage(language){
+
+    document.querySelectorAll("[data-key]").forEach(element=>{
+
+        const key=element.dataset.key;
+
+        element.innerHTML=translations[language][key];
+
+    });
+
+}
