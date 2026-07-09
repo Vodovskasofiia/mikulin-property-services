@@ -317,3 +317,45 @@ footer {
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 
 }
+
+.whatsapp{
+
+position:fixed;
+
+right:30px;
+
+bottom:30px;
+
+width:65px;
+
+height:65px;
+
+background:white;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+z-index:999;
+
+transition:.3s;
+
+}
+
+.whatsapp img{
+
+width:38px;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.12);
+
+}
