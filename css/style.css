@@ -32,8 +32,9 @@ nav {
 
     padding:0 8%;
 
-    background:white;
-
+   background:#ffffff;
+box-shadow:0 2px 15px rgba(0,0,0,.05);
+  
 }
 
 .logo {
@@ -185,12 +186,17 @@ h2 {
 .card {
 
     background:#f8fafc;
-
-    padding:35px 25px;
-
-    border-radius:15px;
-
     text-align:center;
+
+    background:white;
+
+border-radius:20px;
+
+padding:35px;
+
+box-shadow:0 12px 35px rgba(0,0,0,.07);
+
+transition:.35s;
 
 }
 
@@ -204,11 +210,11 @@ h2 {
 
 
 
-.card:hover {
+.card:hover{
 
-    transform:translateY(-5px);
+transform:translateY(-10px);
 
-    transition:0.3s;
+box-shadow:0 20px 45px rgba(0,0,0,.12);
 
 }
 
