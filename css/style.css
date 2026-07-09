@@ -75,7 +75,7 @@ box-shadow:0 2px 15px rgba(0,0,0,.05);
 
 .hero {
 
- 
+ url("../hero-house.jpg");
 
    height: 550px;
 
@@ -127,7 +127,6 @@ border-bottom-right-radius: 40px;
 
     border-radius:20px;
 
-}
 
 }
 
