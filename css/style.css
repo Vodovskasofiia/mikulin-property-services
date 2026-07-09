@@ -511,3 +511,36 @@ transform:scale(1.12);
     animation:pulse 2.5s infinite;
 
 }
+.language-switcher{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-left:30px;
+
+}
+
+.language-switcher button{
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    color:#10233F;
+
+    transition:.3s;
+
+}
+
+.language-switcher button:hover{
+
+    color:#C8A24C;
+
+}
