@@ -299,7 +299,11 @@ footer {
 
 .logo img {
 
-    height:65px;
-    width:auto;
+    height: 65px;
+    width: auto;
+
+    border-radius: 15px;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 
 }
