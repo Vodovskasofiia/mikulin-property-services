@@ -75,9 +75,9 @@ box-shadow:0 2px 15px rgba(0,0,0,.05);
 
 .hero {
 
-  .hero{
+ 
 
-    height:90vh;
+   height: 550px;
 
     background:
     linear-gradient(
@@ -101,8 +101,11 @@ box-shadow:0 2px 15px rgba(0,0,0,.05);
     text-align:center;
 
     color:white;
+    border-bottom-left-radius: 40px;
+border-bottom-right-radius: 40px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.15);
 
-}
+
 
 }
 
@@ -110,7 +113,21 @@ box-shadow:0 2px 15px rgba(0,0,0,.05);
 
 .hero-content {
 
-    max-width:900px;
+    .hero-content{
+
+    max-width:750px;
+
+    padding:40px;
+
+    background:rgba(0,0,0,.18);
+
+    backdrop-filter:blur(4px);
+
+    -webkit-backdrop-filter:blur(4px);
+
+    border-radius:20px;
+
+}
 
 }
 
