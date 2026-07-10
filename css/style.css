@@ -34,6 +34,7 @@ nav {
 
    background:#ffffff;
 box-shadow:0 2px 15px rgba(0,0,0,.05);
+
   
 }
 
@@ -386,6 +387,7 @@ footer {
 
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 
+
 }
 
 .whatsapp{
@@ -544,3 +546,88 @@ transform:scale(1.12);
     color:#C8A24C;
 
 }
+
+/* ==========================================
+   MOBILE VERSION
+========================================== */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .logo img {
+        height: 55px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .hero {
+        height: 430px;
+        padding: 25px;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 25px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .about p {
+        font-size: 17px;
+    }
+
+    .button {
+        display: inline-block;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .whatsapp {
+        width: 55px;
+        height: 55px;
+        right: 18px;
+        bottom: 18px;
+    }
+
+}
+
+/* Телефоны */
+@media (max-width: 768px) {
+
+}
+
+/* Планшеты */
+@media (max-width: 1024px) {
+
+}
+
+/* Очень большие мониторы */
+@media (min-width: 1400px) {
+
+}
+
