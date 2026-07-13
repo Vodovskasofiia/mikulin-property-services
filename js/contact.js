@@ -69,12 +69,14 @@ const childrenValue = document.getElementById("children");
 document.querySelector(".plus").addEventListener("click", () => {
     adults++;
     adultsValue.textContent = adults;
+    updateGuestInputs();
 });
 
 document.querySelector(".minus").addEventListener("click", () => {
     if (adults > 1) {
         adults--;
         adultsValue.textContent = adults;
+        updateGuestInputs();
     }
 });
 
@@ -82,11 +84,27 @@ document.querySelector(".minus").addEventListener("click", () => {
 document.querySelector(".plus-child").addEventListener("click", () => {
     children++;
     childrenValue.textContent = children;
+    updateGuestInputs();
 });
 
 document.querySelector(".minus-child").addEventListener("click", () => {
     if (children > 0) {
         children--;
         childrenValue.textContent = children;
+        updateGuestInputs();
     }
 });
+// ===============================
+// Hidden Inputs für Web3Forms
+// ===============================
+
+function updateGuestInputs() {
+
+    document.getElementById("adultsInput").value = adults;
+    document.getElementById("childrenInput").value = children;
+    document.getElementById("totalGuestsInput").value = adults + children;
+
+}
+
+// Заполняем при загрузке страницы
+updateGuestInputs();
