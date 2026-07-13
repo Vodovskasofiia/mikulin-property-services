@@ -54,3 +54,39 @@ function calculateNights(){
     }
 
 }
+
+// ===============================
+// Gästezähler
+// ===============================
+
+let adults = 2;
+let children = 0;
+
+const adultsValue = document.getElementById("adults");
+const childrenValue = document.getElementById("children");
+
+// Взрослые
+document.querySelector(".plus").addEventListener("click", () => {
+    adults++;
+    adultsValue.textContent = adults;
+});
+
+document.querySelector(".minus").addEventListener("click", () => {
+    if (adults > 1) {
+        adults--;
+        adultsValue.textContent = adults;
+    }
+});
+
+// Дети
+document.querySelector(".plus-child").addEventListener("click", () => {
+    children++;
+    childrenValue.textContent = children;
+});
+
+document.querySelector(".minus-child").addEventListener("click", () => {
+    if (children > 0) {
+        children--;
+        childrenValue.textContent = children;
+    }
+});
