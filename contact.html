@@ -38,75 +38,175 @@
 
 <section class="contact">
 
+    <div class="contact-container">
 
-<h2>
-Kontaktieren Sie uns
-</h2>
+        <div class="contact-title">
 
+            <h2>Kontaktieren Sie uns</h2>
 
-<p>
-Wir freuen uns auf Ihre Anfrage.
-</p>
+            <p>
+                Senden Sie uns Ihre Anfrage.
+                Wir melden uns innerhalb von 24 Stunden.
+            </p>
 
+        </div>
 
-<br>
+        <form id="bookingForm">
 
+            <div class="row">
 
-<div class="card">
+                <div class="input-group">
 
+                    <label>Vorname *</label>
 
-<h3>
-📍 Standort
-</h3>
+                    <input
+                        type="text"
+                        id="firstName"
+                        required>
 
-<p>
-Bern, Schweiz
-</p>
+                </div>
 
+                <div class="input-group">
 
-</div>
+                    <label>Nachname *</label>
 
+                    <input
+                        type="text"
+                        id="lastName"
+                        required>
 
+                </div>
 
-<div class="card">
+            </div>
 
+            <div class="row">
 
-<h3>
-📞 Telefon / WhatsApp
-</h3>
+                <div class="input-group">
 
-<p>
-+41 79 939 85 42
-</p>
+                    <label>Telefon *</label>
 
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="+41..."
+                        required>
 
-</div>
+                </div>
 
+                <div class="input-group">
 
+                    <label>E-Mail *</label>
 
-<div class="card">
+                    <input
+                        type="email"
+                        id="email"
+                        required>
 
+                </div>
 
-<h3>
-✉️ E-Mail
-</h3>
+            </div>
 
-<p>
-info@mikulin-property.ch
-</p>
+            <div class="row">
 
+                <div class="input-group">
 
-</div>
+                    <label>Anreisedatum</label>
 
+                    <input
+                        type="date"
+                        id="checkin">
 
+                </div>
 
-<a class="button" href="#">
-Nachricht senden
-</a>
+                <div class="input-group">
 
+                    <label>Abreisedatum</label>
 
+                    <input
+                        type="date"
+                        id="checkout">
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="input-group">
+
+                    <label>Nächte</label>
+
+                    <input
+                        type="number"
+                        id="nights"
+                        readonly>
+
+                </div>
+
+            </div>
+
+            <div class="guests">
+
+                <h3>Gäste</h3>
+
+                <div class="guest-row">
+
+                    <span>Erwachsene</span>
+
+                    <div class="counter">
+
+                        <button type="button" class="minus">−</button>
+
+                        <span id="adults">2</span>
+
+                        <button type="button" class="plus">+</button>
+
+                    </div>
+
+                </div>
+
+                <div class="guest-row">
+
+                    <span>Kinder</span>
+
+                    <div class="counter">
+
+                        <button type="button" class="minus-child">−</button>
+
+                        <span id="children">0</span>
+
+                        <button type="button" class="plus-child">+</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Kommentar</label>
+
+                <textarea
+                    id="message"
+                    rows="6"
+                    placeholder="Ihre Nachricht..."></textarea>
+
+            </div>
+
+            <button class="send-button">
+
+                Anfrage senden
+
+            </button>
+
+        </form>
+
+    </div>
 
 </section>
+
+
 
 
 
