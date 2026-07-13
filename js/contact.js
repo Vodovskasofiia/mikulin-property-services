@@ -108,3 +108,72 @@ function updateGuestInputs() {
 
 // Заполняем при загрузке страницы
 updateGuestInputs();
+
+// ===============================
+// Web3Forms Submit
+// ===============================
+
+const form = document.getElementById("bookingForm");
+const result = document.getElementById("result");
+const submitBtn = document.getElementById("submitBtn");
+
+form.addEventListener("submit", async function (e) {
+
+    e.preventDefault();
+
+    updateGuestInputs();
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Wird gesendet...";
+
+    const formData = new FormData(form);
+
+    try {
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+
+            method: "POST",
+
+            body: formData
+
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+
+            result.style.color = "#2e7d32";
+            result.innerHTML =
+                "✅ Vielen Dank! Ihre Anfrage wurde erfolgreich gesendet.";
+
+            form.reset();
+
+            adults = 2;
+            children = 0;
+
+            adultsValue.textContent = adults;
+            childrenValue.textContent = children;
+
+            nights.value = "";
+
+            updateGuestInputs();
+
+        } else {
+
+            result.style.color = "red";
+            result.innerHTML = "❌ Fehler: " + data.message;
+
+        }
+
+    } catch (error) {
+
+        result.style.color = "red";
+        result.innerHTML =
+            "❌ Verbindung zum Server fehlgeschlagen.";
+
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Anfrage senden";
+
+});
